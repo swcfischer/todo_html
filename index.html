@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+  <body>
+    <input type="checkbox" id="menu-toggle">
+    <header>
+      <h1>All Todos<span>18</span></h1>
+      <nav class="all-todos">
+        <ul>
+          <li class="active"><a href="#" >02/16</a><span>8</span></li>
+          <li><a href="#" >03/16</a><span>2</span></li>
+          <li><a href="#" >04/16</a><span>1</span></li>
+          <li><a href="#" >05/16</a><span>1</span></li>
+          <li><a href="#" >06/16</a><span>6</span></li>
+        </ul>
+      </nav>
+
+      <h1>Completed</h1>
+      <nav class="completed-todos">
+        <ul>
+          <li><a href="#" >02/15</a></li>
+          <li><a href="#" >03/15</a></li>
+          <li><a href="#" >04/15</a></li>
+          <li><a href="#" >05/15</a></li>
+          <li><a href="#" >06/14</a></li>
+        </ul>
+      </nav><!-- Completed Todos -->
+    </header>
+    <main>
+      <label for="menu-toggle"></label>
+      <!-- This is the hamburger icon -->
+      
+      <h1>02/16<span>8</span></h1>
+      <a href="#" class="add">Add new to do</a><!-- This is the small blue addition symbol-->
+      
+      <ul>
+        <li>
+          <form action="#" method="post" class="check">
+            <input type="hidden" name="incomplete">
+            <button type="submit">complete</button>
+          </form>
+          <!-- MODAL -->
+          <label for="modal">
+            Item 1
+          </label>
+          <input type="checkbox" id="modal">
+          <div class="wrapper">
+            <form action="#" method="post" class="popup">
+              <fieldset>
+                
+                <dl>
+                  <dt>
+                    <label for="title">Title</label>
+                  </dt><!--
+                  --><dd class="full-column">
+                    <input type="text" name="title" id="title">
+                  </dd>
+                </dl>
+                
+                <dl>
+                  <dt>
+                    <label for="due-date">
+                      Due Date
+                    </label>
+                  </dt><!--
+                  --><dd>
+                    <select name="due-date" id="due-date" class="one-third">
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16" selected>16</option>
+                    </select><!--
+                  --><span>/</span><!--
+                  --><select name="month" id="month" class="one-third">
+                      <option>Month</option>
+                    </select><!--
+
+                  --><span>/</span><!--
+
+                  --><select name="year" id="year" class="one-third">
+                      <option value="">Year</option>
+                    </select>
+                  </dd>
+                </dl>
+                
+                <dl class="align-top">
+                  <dt>
+                    <label for="description">
+                      Description
+                    </label>
+                  </dt><!--
+                  
+                  --><dd>
+                    <textarea rows="6" cols="45" id="description" name="description" placeholder="Description"></textarea>
+                  </dd>
+                </dl>
+                
+                <dl>
+                  <dt>
+                  </dt>
+                  <dd>
+                    <input type="submit" value="Save" class="btn"><!--
+                    --><input type="submit" value="Mark as Complete" class="btn">
+                  </dd>
+                </dl>
+              </fieldset>
+            </form>
+          </div>
+          <form action="#" method="post" class="delete">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
+
+        <li>
+          <form action="#" method="post" class="check">
+            <input type="hidden" name="incomplete">
+            <button type="submit">complete</button>
+          </form>
+
+          <a href="#">Item 2</a>
+          <form action="#" method="post" class="delete">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
+
+        <li>
+          <form action="#" method="post" class="checked">
+            <input type="hidden" name="incomplete">
+            <button type="submit">complete</button>
+          </form>
+
+          <a href="#">Item 3</a>
+          <form action="#" method="post" class="delete">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
+
+        <li>
+          <form action="#" method="post" class="checked">
+            <input type="hidden" name="incomplete">
+            <button type="submit">complete</button>
+          </form>
+
+          <a href="#">Item 4</a>
+          <form action="#" method="post" class="delete">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
+
+        <li>
+          <form action="#" method="post" class="checked">
+            <input type="hidden" name="incomplete">
+            <button type="submit">complete</button>
+          </form>
+
+          <a href="#">Item 5</a>
+          <form action="#" method="post" class="delete">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
+
+        <li>
+          <form action="#" method="post" class="check">
+            <input type="hidden" name="incomplete">
+            <button type="submit">complete</button>
+          </form>
+
+          <a href="#">Item 6</a>
+          <form action="#" method="post" class="delete">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
+
+        <li>
+          <form action="#" method="post" class="check">
+            <input type="hidden" name="incomplete">
+            <button type="submit">complete</button>
+          </form>
+
+          <a href="#">Item 7</a>
+          <form action="#" method="post" class="delete">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
+
+        <li>
+          <form action="#" method="post" class="check">
+            <input type="hidden" name="incomplete">
+            <button type="submit">complete</button>
+          </form>
+
+          <a href="#">Item 8</a>
+          <form action="#" method="post" class="delete">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
+
+        <li>
+          <form action="#" method="post" class="check">
+            <input type="hidden" name="incomplete">
+            <button type="submit">complete</button>
+          </form>
+
+          <a href="#">Item 9</a>
+          <form action="#" method="post" class="delete">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
